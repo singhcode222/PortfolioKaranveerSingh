@@ -1,6 +1,6 @@
 
 /* ------------------------------
-   ROOT VARIABLES
+   root/basic varaivles 
 ------------------------------ */
 
 :root {
@@ -19,7 +19,7 @@
     --subtle-glow: 0 0 10px rgba(255,255,255,0.15);
 }
 
-/* Light Mode */
+/* light mode */
 
 body.light-mode {
     --text-color: #111111;
@@ -37,9 +37,7 @@ body.light-mode {
     --subtle-glow: 0 0 10px rgba(0,0,0,0.08);
 }
 
-/* ------------------------------
-   BODY
------------------------------- */
+
 
 body {
     margin: 0;
@@ -59,9 +57,7 @@ body {
     overflow-x: hidden;
 }
 
-/* ------------------------------
-   TEXT
------------------------------- */
+
 
 h1,
 h2,
@@ -86,9 +82,7 @@ li {
     letter-spacing: 1px;
 }
 
-/* ------------------------------
-   MAIN GARAGE AREA
------------------------------- */
+
 
 .garage-container {
     position: relative;
@@ -96,11 +90,10 @@ li {
     min-height: 100vh;
 }
 
-/* ------------------------------
-   CAR PLACEHOLDER
------------------------------- */
+/* 
+   car positions */
 
-.main-car {
+.rb21 {
     position: fixed;
 
     bottom: 25px;
@@ -114,9 +107,61 @@ li {
     z-index: 10;
 }
 
-/* ------------------------------
-   CLICKABLE OBJECTS
------------------------------- */
+.ghostbusters {
+    position: fixed;
+
+    bottom: 25px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 850px;
+    max-width: 75vw;
+
+    z-index: 10;
+}
+
+.sf2002 {
+    position: fixed;
+
+    bottom: 25px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 850px;
+    max-width: 75vw;
+
+    z-index: 10;
+}
+
+.delorean {
+    position: fixed;
+
+    bottom: 25px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 850px;
+    max-width: 75vw;
+
+    z-index: 10;
+}
+
+.mystery-machine {
+    position: fixed;
+
+    bottom: 25px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 850px;
+    max-width: 75vw;
+
+    z-index: 10;
+}
 
 .clickable-object {
     position: absolute;
@@ -134,9 +179,6 @@ li {
     filter: drop-shadow(0 0 6px rgba(255,255,255,0.18));
 }
 
-/* ------------------------------
-   TOOLTIP LABELS
------------------------------- */
 
 .object-wrapper {
     position: absolute;
@@ -172,9 +214,7 @@ li {
     opacity: 1;
 }
 
-/* ------------------------------
-   PLACEHOLDER OBJECT SIZE
------------------------------- */
+
 
 .placeholder-object {
     width: 120px;
@@ -194,16 +234,13 @@ li {
     color: var(--text-color);
 }
 
-/* ------------------------------
-   LEFT / RIGHT WALL SIGNS
------------------------------- */
 
 .wall-sign {
     position: fixed;
 
-    top: 45%;
+    top: 75%;
 
-    width: 170px;
+    width: 125px;
 
     padding: 15px;
 
@@ -215,7 +252,7 @@ li {
 
     background: var(--nav-bg);
 
-    border: 1px solid rgba(255,255,255,0.15);
+    border: 1px solid rgb(0, 85, 255);
 
     border-radius: 8px;
 
@@ -236,9 +273,6 @@ li {
     right: 20px;
 }
 
-/* ------------------------------
-   GARAGE DIRECTORY
------------------------------- */
 
 .directory-sign {
     position: absolute;
@@ -253,7 +287,7 @@ li {
 
     background: var(--directory-bg);
 
-    border: 1px solid rgba(255,255,255,0.15);
+    border: 1px solid rgba(0, 85, 255, 0.15);
 
     border-radius: 8px;
 
@@ -271,7 +305,7 @@ li {
 }
 
 /* ------------------------------
-   MODAL OVERLAY
+   modal overlay
 ------------------------------ */
 
 .modal {
@@ -289,9 +323,8 @@ li {
     align-items: center;
 }
 
-/* ------------------------------
-   TELEMETRY PANEL
------------------------------- */
+/* telementry 
+ */
 
 .modal-content {
     position: relative;
@@ -325,9 +358,8 @@ li {
     margin-bottom: 10px;
 }
 
-/* ------------------------------
-   MODAL CLOSE BUTTON
------------------------------- */
+/* modal close button
+*/
 
 .close-modal {
     position: absolute;
@@ -341,9 +373,9 @@ li {
     font-weight: bold;
 }
 
-/* ------------------------------
-   DIRECTORY LIST
------------------------------- */
+/* 
+   directory.links
+ */
 
 .directory-links {
     display: flex;
@@ -371,7 +403,7 @@ li {
 }
 
 /* ------------------------------
-   SETTINGS TOGGLE
+   settings toggle 
 ------------------------------ */
 
 .toggle-container {
@@ -394,9 +426,8 @@ li {
     font-weight: bold;
 }
 
-/* ------------------------------
-   IMAGE PLACEHOLDERS
------------------------------- */
+/* 
+   image placeholders */
 
 .placeholder-image {
     width: 250px;
@@ -411,9 +442,7 @@ li {
     margin: 15px 0;
 }
 
-/* ------------------------------
-   RESPONSIVE
------------------------------- */
+/* responsive */
 
 @media (max-width: 900px) {
 

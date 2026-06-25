@@ -1,11 +1,6 @@
-/* ==================================================
-   Karan's Garage Portfolio
-   script.js
-   ================================================== */
-
-/* ------------------------------
-   MODAL SYSTEM
------------------------------- */
+/* 
+   all models 
+*/
 
 document.addEventListener("DOMContentLoaded", () => {
 
@@ -14,9 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 
-/* ------------------------------
-   OPEN / CLOSE MODALS
------------------------------- */
+/* open and close modal */
 
 function initializeModals() {
 
@@ -69,9 +62,7 @@ function initializeModals() {
 
 }
 
-/* ------------------------------
-   THEME SYSTEM
------------------------------- */
+/*  acesiblity */
 
 function initializeTheme() {
 
@@ -82,7 +73,6 @@ function initializeTheme() {
     }
 
 }
-
 function toggleTheme() {
 
     document.body.classList.toggle("light-mode");
@@ -97,9 +87,8 @@ function toggleTheme() {
 
 }
 
-/* ------------------------------
-   DIRECTORY HELPER
------------------------------- */
+/* 
+   directory */
 
 function openDirectory() {
 
@@ -111,10 +100,6 @@ function openDirectory() {
     }
 
 }
-
-/* ------------------------------
-   GENERIC MODAL HELPERS
------------------------------- */
 
 function openModal(modalId) {
 
