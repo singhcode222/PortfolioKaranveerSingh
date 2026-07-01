@@ -12,7 +12,6 @@
 }
 
 /* light mode */
-
 body.light-mode {
     --text-color: #111111;
     --panel-bg: rgba(245, 245, 245, 0.95);
@@ -73,7 +72,6 @@ li {
     max-width: 75vw;
     z-index: 10;
 }
-
 .ghostbusters {
     position: absolute;
     bottom: 3%;
@@ -83,7 +81,6 @@ li {
     max-width: 75vw;
     z-index: 10;
 }
-
 .sf2002 {
     position: absolute;
     bottom: 3%;
@@ -213,7 +210,7 @@ li {
 .directory-sign:hover {
     box-shadow: var(--subtle-glow);
 }
-/*  modal overlay*/
+/*  modal overlay */
 .modal {
     display: none;
     position: fixed;
@@ -226,24 +223,15 @@ li {
 /* telementry */
 .modal-content {
     position: relative;
-
     width: 800px;
     max-width: 90vw;
-
     max-height: 85vh;
-
     overflow-y: auto;
-
     padding: 25px;
-
     background: var(--panel-bg);
-
     border: 2px solid var(--panel-border);
-
     border-radius: 12px;
-
     color: var(--text-color);
-
     box-shadow: var(--subtle-glow);
 }
 
@@ -256,7 +244,7 @@ li {
     margin-bottom: 10px;
 }
 
-/* modal close button*/
+/* modal close */
 .close-modal {
     position: absolute;
     top: 12px;
@@ -265,13 +253,11 @@ li {
     font-size: 1.4rem;
     font-weight: bold;
 }
-/* directory.links*/
+/* dicretory links*/
 .directory-links {
     display: flex;
     flex-direction: column;
-
     gap: 12px;
-
     margin-top: 20px;
 }
 
@@ -287,10 +273,7 @@ li {
     background: rgba(255,255,255,0.08);
 }
 
-/* ------------------------------
-   song list (radio modal)
-   Flexbox layout: [title] + [compact Spotify embed]
------------------------------- */
+/* radio model */
 
 .song-list {
     display: flex;
@@ -308,7 +291,7 @@ li {
     min-width: 200px;
     font-weight: 600;
 }
-/* Compact Spotify embed — 80px tall, flexible width */
+/* spotify embeds*/
 .spotify-player {
     width: 280px;
     max-width: 100%;
@@ -318,7 +301,7 @@ li {
     flex-shrink: 0;
 }
 
-/* On smaller screens, stack vertically */
+/* small scren */
 @media (max-width: 600px) {
     .song-item {
         flex-direction: column;
@@ -329,9 +312,7 @@ li {
     }
 }
 
-/* ------------------------------
-   settings toggle 
------------------------------- */
+/* settings toggle */
 
 .toggle-container {
     margin-top: 20px;
@@ -347,28 +328,19 @@ li {
     font-weight: bold;
 }
 
-/* 
-   image placeholders */
+/* image place holders until i get real pictures */
 
 .placeholder-image {
     width: 250px;
     height: 150px;
-
     border: 2px dashed rgba(255,255,255,0.25);
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     margin: 15px 0;
 }
 
-/* ------------------------------
-   Contact page link rows
-   Flexbox row: [logo] + [link text]
-   Links stay white regardless of visited state.
------------------------------- */
-
+/* contact links */
 .contact-link-row {
     display: flex;
     align-items: center;
@@ -376,14 +348,14 @@ li {
     margin-top: 10px;
 }
 
-/* SVG logos — 32px square, vertically centered */
+/* svg logos  */
 .contact-logo-emoji {
     font-size: 28px;
     line-height: 1;
     flex-shrink: 0;
 }
 
-/* Links stay white always — no purple on visit */
+/* links white alway */
 .contact-link {
     color: #ffffff !important;
     text-decoration: underline;
@@ -411,11 +383,7 @@ li {
     }
 }
 
-
-/* =====================================
-   GARAGE IMAGE
-===================================== */
-
+/* garage theme pic */
 .garage-image{
     width:100vw;
     height:100vh;
@@ -423,25 +391,17 @@ li {
     display:block;
 }
 
-/* =====================================
-   TOP DIRECTORY
-===================================== */
-
+/* top nav bar  */
 .top-directory{
     position:fixed;
     top:0;
     left:0;
-
     width:100%;
-
     display:flex;
     justify-content:center;
     gap:30px;
-
     padding:15px 0;
-
     background:rgba(0,0,0,.75);
-
     z-index:1000;
 }
 
@@ -452,85 +412,53 @@ li {
     font-weight:bold;
 }
 
-/* =====================================
-   BAY ARROWS
-===================================== */
-
+/* side arrows */
 .bay-arrow{
     position:fixed;
-
     top:50%;
-
     transform:translateY(-50%);
-
     width:50px;
     height:50px;
-
     display:flex;
     align-items:center;
     justify-content:center;
-
     font-size:2rem;
-
     color:white;
-
     text-decoration:none;
-
     background:rgba(0,0,0,.7);
-
     border-radius:50%;
-
     z-index:1000;
 }
 
 .left-arrow{
     left:15px;
 }
-
 .right-arrow{
     right:15px;
 }
 
-/* =====================================
-   HOTSPOTS
-===================================== */
-
+/* invisivle hitbox*/
 .hotspot{
     position:absolute;
     cursor:pointer;
     z-index:200;
 }
 
-/* =====================================
-   HOVER CARDS
-===================================== */
-
+/* hover cards*/
 .hover-card{
     position:absolute;
-
     bottom:110%;
-
     left:50%;
-
     transform:translateX(-50%);
-
     width:280px;
-
     padding:15px;
-
     background:rgba(20,20,20,.95);
-
     border-radius:10px;
-
     color:white;
-
     opacity:0;
-
     pointer-events:none;
-
     transition:.25s ease;
 }
-
 .hover-card h3{
     margin-bottom:10px;
 }
@@ -539,12 +467,9 @@ li {
     opacity:1;
 }
 
-/* =====================================
-   RB21 HOTSPOTS
-===================================== */
+/* RB21 hotspot */
 
-/* TV */
-
+/* tv */
 .tv-hotspot{
     top:18%;
     left:5%;
@@ -552,8 +477,7 @@ li {
     height:22%;
 }
 
-/* Helmet */
-
+/* helmet */
 .helmet-hotspot{
     top:25%;
     left:68%;
@@ -561,8 +485,7 @@ li {
     height:18%;
 }
 
-/* Tires */
-
+/* tire */
 .tire-hotspot{
     top:55%;
     left:8%;
@@ -570,24 +493,17 @@ li {
     height:20%;
 }
 
-/* =====================================
-   PAGE TRANSITION
-===================================== */
-
+/* page transition */
 body{
     animation:slideIn .35s ease;
 }
-
 @keyframes slideIn{
-
     from{
         opacity:0;
         transform:translateX(25px);
     }
-
     to{
         opacity:1;
         transform:translateX(0);
     }
-
 }
